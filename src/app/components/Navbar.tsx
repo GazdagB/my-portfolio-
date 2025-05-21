@@ -15,6 +15,7 @@ import { FaSquareXTwitter } from 'react-icons/fa6'
 import { Tooltip } from 'react-tooltip'
 import 'react-tooltip/dist/react-tooltip.css'
 import { useState } from 'react'
+import Link from 'next/link'
 
 const Navbar = () => {
 
@@ -30,55 +31,80 @@ const Navbar = () => {
 
       {/* Page Menu */}
       <div className="text-3xl flex flex-col gap-4">
-        <AiOutlineHome
-          data-tooltip-id="tooltip-home"
-          data-tooltip-content="Home"
-          className="focus:outline-none focus-visible:ring-0 cursor-pointer hover:text-secondary hover:scale-115 transition-all ease-in-out"
-        />
-        <BiUser
-          data-tooltip-id="tooltip-user"
-          data-tooltip-content="About"
-          className="focus:outline-none focus-visible:ring-0  cursor-pointer hover:text-secondary hover:scale-115 transition-all ease-in-out"
-        />
-        <TbBriefcase2
-          data-tooltip-id="tooltip-work"
-          data-tooltip-content="Work"
-          className="focus:outline-none focus-visible:ring-0  cursor-pointer hover:text-secondary hover:scale-115 transition-all ease-in-out"
-        />
-        <LuContactRound
-          data-tooltip-id="tooltip-contact"
-          data-tooltip-content="Contact"
-          className="focus:outline-none focus-visible:ring-0  cursor-pointer hover:text-secondary hover:scale-115 transition-all ease-in-out"
-        />
-        <IoNewspaperOutline
-          data-tooltip-id="tooltip-blog"
-          data-tooltip-content="Blog"
-          className="focus:outline-none focus-visible:ring-0  cursor-pointer hover:text-secondary hover:scale-115 transition-all ease-in-out"
-        />
+        <Link href={"/"}>
+          <AiOutlineHome
+            data-tooltip-id="tooltip-home"
+            data-tooltip-content="Home"
+            className="focus:outline-none focus-visible:ring-0 cursor-pointer hover:text-secondary hover:scale-115 transition-all ease-in-out"
+          />
+        </Link>
+
+        <Link href={"/about"}>
+          <BiUser
+            data-tooltip-id="tooltip-user"
+            data-tooltip-content="About"
+            className="focus:outline-none focus-visible:ring-0  cursor-pointer hover:text-secondary hover:scale-115 transition-all ease-in-out"
+          />
+        </Link>
+
+        <Link href={"/work"}>
+          <TbBriefcase2
+            data-tooltip-id="tooltip-work"
+            data-tooltip-content="Work"
+            className="focus:outline-none focus-visible:ring-0  cursor-pointer hover:text-secondary hover:scale-115 transition-all ease-in-out"
+          />
+        </Link>
+
+        <Link href={"/contact"}>
+          <LuContactRound
+            data-tooltip-id="tooltip-contact"
+            data-tooltip-content="Contact"
+            className="focus:outline-none focus-visible:ring-0  cursor-pointer hover:text-secondary hover:scale-115 transition-all ease-in-out"
+          />
+        </Link>
+
+        <Link href={"/blog"}>
+          <IoNewspaperOutline
+            data-tooltip-id="tooltip-blog"
+            data-tooltip-content="Blog"
+            className="focus:outline-none focus-visible:ring-0  cursor-pointer hover:text-secondary hover:scale-115 transition-all ease-in-out"
+          />
+        </Link>
       </div>
 
       {/* Social Menu */}
       <div className="text-3xl flex flex-col gap-4">
-        <FaGithub
-          data-tooltip-id="tooltip-github"
-          data-tooltip-content="GitHub"
-          className="focus:outline-none focus-visible:ring-0  cursor-pointer hover:text-primary hover:scale-115 transition-all ease-in-out"
-        />
-        <ImYoutube
-          data-tooltip-id="tooltip-youtube"
-          data-tooltip-content="YouTube"
-          className="focus:outline-none focus-visible:ring-0  cursor-pointer hover:text-primary hover:scale-115 transition-all ease-in-out"
-        />
-        <FaSquareXTwitter
-          data-tooltip-id="tooltip-twitter"
-          data-tooltip-content="Twitter"
-          className="focus:outline-none focus-visible:ring-0  cursor-pointer hover:text-primary hover:scale-115 transition-all ease-in-out"
-        />
-        <FaInstagramSquare
-          data-tooltip-id="tooltip-instagram"
-          data-tooltip-content="Instagram"
-          className="focus:outline-none focus-visible:ring-0  cursor-pointer hover:text-primary hover:scale-115 transition-all ease-in-out"
-        />
+        <Link href={"https://github.com/GazdagB"} target='_blank'>
+          <FaGithub
+            data-tooltip-id="tooltip-github"
+            data-tooltip-content="GitHub"
+            className="focus:outline-none focus-visible:ring-0  cursor-pointer hover:text-primary hover:scale-115 transition-all ease-in-out"
+          />
+        </Link>
+
+        <Link href={"https://www.youtube.com/@gazdagbalazs"} target='_blank'>
+          <ImYoutube
+            data-tooltip-id="tooltip-youtube"
+            data-tooltip-content="YouTube"
+            className="focus:outline-none focus-visible:ring-0  cursor-pointer hover:text-primary hover:scale-115 transition-all ease-in-out"
+          />
+        </Link>
+
+        <Link href={"https://x.com/gazdag99"} target='_blank'>
+          <FaSquareXTwitter
+            data-tooltip-id="tooltip-twitter"
+            data-tooltip-content="Twitter"
+            className="focus:outline-none focus-visible:ring-0  cursor-pointer hover:text-primary hover:scale-115 transition-all ease-in-out"
+          />
+        </Link>
+
+        <Link href={"https://www.instagram.com/gazdag99/?next=%2F"} target='_blank'>
+          <FaInstagramSquare
+            data-tooltip-id="tooltip-instagram"
+            data-tooltip-content="Instagram"
+            className="focus:outline-none focus-visible:ring-0  cursor-pointer hover:text-primary hover:scale-115 transition-all ease-in-out"
+          />
+        </Link>
       </div>
 
       {/* Dark Mode */}
@@ -95,7 +121,7 @@ const Navbar = () => {
       <Tooltip hidden={isOpen} place='right' id="tooltip-work" />
       <Tooltip hidden={isOpen} place='right' id="tooltip-contact" />
       <Tooltip hidden={isOpen}  place='right' id="tooltip-blog" />
-      <Tooltip hidden={isOpen} place='right' id="tooltip-github" />
+      <Tooltip  hidden={isOpen} place='right' id="tooltip-github" />
       <Tooltip hidden={isOpen} place='right' id="tooltip-youtube" />
       <Tooltip hidden={isOpen} place='right' id="tooltip-twitter" />
       <Tooltip hidden={isOpen} place='right' id="tooltip-instagram" />
