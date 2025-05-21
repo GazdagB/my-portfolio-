@@ -23,11 +23,13 @@ const Navbar = () => {
     
   return (
     <div className='flex flex-col items-center justify-between py-15 h-full fixed w-[100px] bg-off-white border-r-2'>
-      <img
-        src="/gb_logo.svg"
-        alt="Logo"
-        className="w-[50px] hover:scale-110 hover:rotate-10 transition-all ease-in-out duration-300 cursor-pointer"
-      />
+      <Link href={"/"}>
+        <img
+          src="/gb_logo.svg"
+          alt="Logo"
+          className="w-[50px] hover:scale-110 hover:rotate-10 transition-all ease-in-out duration-300 cursor-pointer"
+        />
+      </Link>
 
       {/* Page Menu */}
       <div className="text-3xl flex flex-col gap-4">
