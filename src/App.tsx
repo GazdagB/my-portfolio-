@@ -1,6 +1,6 @@
-import Forcast from "./components/Forcast";
+import Forcast from "./components/Forecast";
 
-export default function Home() {
+function App() {
   return (
     <div className="items-center justify-items-center min-h-screen font-sans">
       {/* Top Bar */}
@@ -13,3 +13,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default App

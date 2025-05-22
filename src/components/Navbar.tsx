@@ -1,5 +1,3 @@
-'use client'
-
 import React from 'react'
 import {
   AiOutlineHome,
@@ -15,7 +13,8 @@ import { FaSquareXTwitter } from 'react-icons/fa6'
 import { Tooltip } from 'react-tooltip'
 import 'react-tooltip/dist/react-tooltip.css'
 import { useState } from 'react'
-import Link from 'next/link'
+import { Link } from 'react-router-dom';
+import Logo from "../assets/logo-icon.svg"
 
 const Navbar = () => {
 
@@ -23,9 +22,9 @@ const Navbar = () => {
     
   return (
     <div className='flex flex-col items-center justify-between py-15 h-full fixed w-[100px] bg-off-white border-r-2'>
-      <Link href={"/"}>
+      <Link to={"/"}>
         <img
-          src="/gb_logo.svg"
+          src={Logo}
           alt="Logo"
           className="w-[50px] hover:scale-110 hover:rotate-10 transition-all ease-in-out duration-300 cursor-pointer"
         />
@@ -33,7 +32,7 @@ const Navbar = () => {
 
       {/* Page Menu */}
       <div className="text-3xl flex flex-col gap-4">
-        <Link href={"/"}>
+        <Link to={"/"}>
           <AiOutlineHome
             data-tooltip-id="tooltip-home"
             data-tooltip-content="Home"
@@ -41,7 +40,7 @@ const Navbar = () => {
           />
         </Link>
 
-        <Link href={"/about"}>
+        <Link to={"/about"}>
           <BiUser
             data-tooltip-id="tooltip-user"
             data-tooltip-content="About"
@@ -49,7 +48,7 @@ const Navbar = () => {
           />
         </Link>
 
-        <Link href={"/work"}>
+        <Link to={"/work"}>
           <TbBriefcase2
             data-tooltip-id="tooltip-work"
             data-tooltip-content="Work"
@@ -57,7 +56,7 @@ const Navbar = () => {
           />
         </Link>
 
-        <Link href={"/contact"}>
+        <Link to={"/contact"}>
           <LuContactRound
             data-tooltip-id="tooltip-contact"
             data-tooltip-content="Contact"
@@ -65,7 +64,7 @@ const Navbar = () => {
           />
         </Link>
 
-        <Link href={"/blog"}>
+        <Link to={"/blog"}>
           <IoNewspaperOutline
             data-tooltip-id="tooltip-blog"
             data-tooltip-content="Blog"
@@ -76,7 +75,7 @@ const Navbar = () => {
 
       {/* Social Menu */}
       <div className="text-3xl flex flex-col gap-4">
-        <Link href={"https://github.com/GazdagB"} target='_blank'>
+        <Link to={"https://github.com/GazdagB"} target='_blank'>
           <FaGithub
             data-tooltip-id="tooltip-github"
             data-tooltip-content="GitHub"
@@ -84,7 +83,7 @@ const Navbar = () => {
           />
         </Link>
 
-        <Link href={"https://www.youtube.com/@gazdagbalazs"} target='_blank'>
+        <Link to={"https://www.youtube.com/@gazdagbalazs"} target='_blank'>
           <ImYoutube
             data-tooltip-id="tooltip-youtube"
             data-tooltip-content="YouTube"
@@ -92,7 +91,7 @@ const Navbar = () => {
           />
         </Link>
 
-        <Link href={"https://x.com/gazdag99"} target='_blank'>
+        <Link to={"https://x.com/gazdag99"} target='_blank'>
           <FaSquareXTwitter
             data-tooltip-id="tooltip-twitter"
             data-tooltip-content="Twitter"
@@ -100,7 +99,7 @@ const Navbar = () => {
           />
         </Link>
 
-        <Link href={"https://www.instagram.com/gazdag99/?next=%2F"} target='_blank'>
+        <Link to={"https://www.instagram.com/gazdag99/?next=%2F"} target='_blank'>
           <FaInstagramSquare
             data-tooltip-id="tooltip-instagram"
             data-tooltip-content="Instagram"
