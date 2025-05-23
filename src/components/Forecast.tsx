@@ -1,4 +1,3 @@
-import React from 'react'
 import { HiSun } from "react-icons/hi2";
 import Timer from "./Timer"
 
