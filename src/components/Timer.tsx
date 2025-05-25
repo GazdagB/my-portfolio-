@@ -2,26 +2,22 @@ import {useState, useEffect} from "react"
 
 const Timer = () => {
   const [hasMounted, setHasMounted] = useState(false)
-  const [timeNow, setTimeNow] = useState<null | {
-    seconds: string,
-    minutes: string,
-    hours: string
-  }>(null)
-
-  const padNumber = (num: number): string => {
-    return num < 10 ? "0" + num : num.toString()
-  }
+  const [timeNow, setTimeNow] = useState<string | null> (null)
 
   useEffect(() => {
     setHasMounted(true)
 
     const updateTime = () => {
       const now = new Date()
-      setTimeNow({
-        seconds: padNumber(now.getSeconds()),
-        minutes: padNumber(now.getMinutes()),
-        hours: padNumber(now.getHours()),
+
+      const formatter = new Intl.DateTimeFormat("en-GB", {
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+        hour12: false,
+        timeZone: "Europe/Berlin"
       })
+      setTimeNow(formatter.format(now))
     }
 
     updateTime()
@@ -34,7 +30,7 @@ const Timer = () => {
 
   return (
     <div className='w-[90px] font-bold'>
-      {`${timeNow.hours}:${timeNow.minutes}:${timeNow.seconds}`}
+      {timeNow}
     </div>
   )
 }

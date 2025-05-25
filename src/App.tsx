@@ -42,10 +42,10 @@ function App() {
           <div className="relative">
               <p className="text-[#898989] ms-[-40px] text-lg">&lt;img src="./hero-image.webp"&gt;</p>
               <img width={400} src={hero} alt="" />
-              <div className="w-25 h-25 rounded-3xl flex items-center justify-center bg-charcoal absolute bottom-0 text-white text-[60px] cursor-pointer">
+              <div className="w-25 aspect-square rounded-3xl flex items-center justify-center bg-charcoal absolute bottom-0 text-white text-[60px] cursor-pointer">
                 <GoArrowUpRight />
               </div>
-              <p className="text-[#898989] text-lg absolute right-0 bottom-[-40px]">//Image of Gazdag Balázs</p>
+              <p className="text-[#898989] text-lg absolute right-0 bottom-[-40px]">// Image of Gazdag Balázs</p>
           </div>
           
         </div>
