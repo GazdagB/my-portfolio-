@@ -45,7 +45,7 @@ function App() {
               <div className="w-25 h-25 rounded-3xl flex items-center justify-center bg-charcoal absolute bottom-0 text-white text-[60px] cursor-pointer">
                 <GoArrowUpRight />
               </div>
-              <p className="text-[#898989] text-lg absolute right-0 bottom-[-40px]">//Image of Gazdag Balázs</p>
+              <p className="text-[#898989] text-lg absolute right-0 bottom-[-40px]">// Image of Gazdag Balázs</p>
           </div>
           
         </div>
