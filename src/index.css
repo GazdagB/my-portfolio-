@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+@import url("https://use.typekit.net/gpp1hzc.css");
 @import "tailwindcss";
+
 
 :root{
   padding: 0;
@@ -10,10 +13,21 @@
   --off-white: #F5F5F5;       
   --charcoal: #1C1F26;        
   --charcoal-darker: #1B1B1B; 
+  --font-mono: "Fira Code", monospace;
+  --font-d-sans: "neue-haas-grotesk-display", sans-serif;
+  --font-t-sans: "neue-haas-grotesk-text", sans-serif;
 }
 
+.sans-d-light{
+font-family: "neue-haas-grotesk-display", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
 
 @theme {
+  --font-t-sans: var(--font-t-sans;)
+  --font-mono:  var(--font-mono);
+  --font-d-sans: var(--font-sans);
   --color-primary: var(--primary-color);
   --color-secondary: var(--secondary-color);
   --color-secondary-muted: var(--secondary-muted);
