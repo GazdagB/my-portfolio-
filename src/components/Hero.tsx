@@ -18,7 +18,7 @@ const Hero = () => {
         </div>
         <div className="flex items-center justify-between w-full max-w-[1200px] gap-10 min-h-[80vh]  ">
           {/* Left */}
-          <div className="relative ps-[100px]">
+          <div className="relative">
             <div className="text-[30px] flex flex-col mb-5">
               <p className="mb-[-15px] text-primary font-[500] font-t-sans">Hi!</p>
               <p className="font-[400] font-t-sans">MY NAME IS:</p>
