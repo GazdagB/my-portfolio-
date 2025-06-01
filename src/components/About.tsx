@@ -1,5 +1,6 @@
 import aboutImg from "../assets/about-img.png"
 import { GoArrowUpRight } from "react-icons/go";
+import Skills from "./Skills/Skills";
 
 // TODO: Have to add images later and text
 const About = () => {
@@ -21,12 +22,13 @@ const About = () => {
             themselves. Wether online or through branding.
           </p>
           <div className="flex gap-4 font-mono">
-            <button className="text-white bg-charcoal py-2 px-4 rounded-md">More about me</button>
+            <button className="cursor-pointer text-white bg-charcoal py-2 px-4 rounded-md">More about me</button>
             <div className="cursor-pointer bg-secondary text-[29px] rounded-sm p-2"><GoArrowUpRight /></div>
           </div>
         </div>
       </div>
-    </div>
+      <Skills/>
+      </div>
   );
 };
 
