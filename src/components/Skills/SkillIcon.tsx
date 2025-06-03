@@ -8,7 +8,7 @@ interface SkillIconProps {
 const SkillIcon: React.FC<SkillIconProps> = ({src, alt,title}) => {
 
   return (
-    <div className="flex flex-col text-sm items-center justify-end gap-2 h-20">
+    <div className="cursor-pointer flex flex-col text-sm items-center justify-end gap-2 h-20">
         <img src={src} alt={alt} />
         <p className="font-mono">{title}</p>
     </div>

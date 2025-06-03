@@ -17,71 +17,85 @@ export const icons = [
   {
     src: HTML,
     alt: "HTML Icon",
-    title: "HTML"
+    title: "HTML",
+    hoverColor: "#e44d26" 
   },
   {
     src: CSS,
     alt: "CSS Icon",
-    title: "CSS"
+    title: "CSS",
+    hoverColor: "#264de4" 
   },
   {
     src: TAILWIND,
     alt: "TAILWIND Icon",
-    title: "TAILW."
+    title: "TAILW.",
+    hoverColor: "#38bdf8" 
   },
   {
     src: SASS,
     alt: "SASS Icon",
-    title: "SASS"
+    title: "SASS",
+    hoverColor: "#cd6799" 
   },
   {
     src: JS,
     alt: "JS Icon",
-    title: "JS"
+    title: "JS",
+    hoverColor: "#f0db4f" 
   },
   {
     src: REACT,
     alt: "REACT Icon",
-    title: "REACT"
+    title: "REACT",
+    hoverColor: "#61dafb" 
   },
   {
     src: NODE,
     alt: "NODE Icon",
-    title: "NODE"
+    title: "NODE",
+    hoverColor: "#68a063" 
   },
   {
     src: POSTGRE,
     alt: "POSTGRESQL Icon",
-    title: "POSTGRESQL"
+    title: "POSTGRESQL",
+    hoverColor: "#336791" 
   },
   {
     src: EXPRESS,
     alt: "EXPRESS Icon",
-    title: "EXPRESS"
+    title: "EXPRESS",
+    hoverColor: "#000000"
   },
   {
     src: PHOTOSHOP,
     alt: "PHOTOSHOP Icon",
-    title: "PHOTOSHOP"
+    title: "PHOTOSHOP",
+    hoverColor: "#31a8ff"
   },
   {
     src: ILLUSTRATOR,
     alt: "ILLUSTRATOR Icon",
-    title: "ILLUSTRATOR"
+    title: "ILLUSTRATOR",
+    hoverColor: "#ff9a00" 
   },
-   {
+  {
     src: INDESIGN,
     alt: "INDESIGN Icon",
-    title: "INDESIGN"
+    title: "INDESIGN",
+    hoverColor: "#d72d8a" 
   },
   {
     src: PREMIER,
     alt: "PREMIER Icon",
-    title: "PREMIER"
+    title: "PREMIER",
+    hoverColor: "#9999ff" 
   },
   {
     src: FIGMA,
     alt: "FIGMA Icon",
-    title: "FIGMA"
-  },
-]
+    title: "FIGMA",
+    hoverColor: "#a259ff" 
+  }
+];
