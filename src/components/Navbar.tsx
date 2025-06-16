@@ -11,13 +11,11 @@ import { ImYoutube } from 'react-icons/im'
 import { FaSquareXTwitter } from 'react-icons/fa6'
 import { Tooltip } from 'react-tooltip'
 import 'react-tooltip/dist/react-tooltip.css'
-import { useState } from 'react'
 import { Link } from 'react-router-dom';
 import Logo from "../assets/logo-icon.svg"
 
 const Navbar = () => {
 
-    const [isOpen,setIsOpen] = useState(false); 
     
   return (
     <div className='flex flex-col items-center justify-between py-15 h-full fixed w-[100px] bg-off-white border-r-2'>
@@ -116,16 +114,16 @@ const Navbar = () => {
 
       {/* Tooltips */}
      
-      <Tooltip hidden={isOpen} place='right' id="tooltip-home" />
-      <Tooltip hidden={isOpen} place='right' id="tooltip-user" />
-      <Tooltip hidden={isOpen} place='right' id="tooltip-work" />
-      <Tooltip hidden={isOpen} place='right' id="tooltip-contact" />
-      <Tooltip hidden={isOpen}  place='right' id="tooltip-blog" />
-      <Tooltip  hidden={isOpen} place='right' id="tooltip-github" />
-      <Tooltip hidden={isOpen} place='right' id="tooltip-youtube" />
-      <Tooltip hidden={isOpen} place='right' id="tooltip-twitter" />
-      <Tooltip hidden={isOpen} place='right' id="tooltip-instagram" />
-      <Tooltip hidden={isOpen} place='right' id="tooltip-darkmode" />
+      <Tooltip place='right' id="tooltip-home" />
+      <Tooltip place='right' id="tooltip-user" />
+      <Tooltip place='right' id="tooltip-work" />
+      <Tooltip place='right' id="tooltip-contact" />
+      <Tooltip  place='right' id="tooltip-blog" />
+      <Tooltip  place='right' id="tooltip-github" />
+      <Tooltip place='right' id="tooltip-youtube" />
+      <Tooltip place='right' id="tooltip-twitter" />
+      <Tooltip place='right' id="tooltip-instagram" />
+      <Tooltip place='right' id="tooltip-darkmode" />
     
 
       
