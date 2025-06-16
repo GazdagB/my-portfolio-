@@ -16,16 +16,16 @@ const Construction = () => {
         <ProgressBar precent={20} />
         <img className="w-100 mb-15 px-10" src={GazdagSLogo} alt="Gazdag Studio Logo" />
         <div className="text-3xl items-center justify-center flex gap-3">
-          <Link to={"/"}>
+          <Link to={"https://www.youtube.com/@GazdagStudio"} target="_blank">
             <FaYoutube />
           </Link>
-          <Link to={""}>
+          <Link to={"https://www.instagram.com/gazdag.studio/"} target="_blank">
             <FaInstagramSquare />
           </Link>
-          <Link to={""}>
+          <Link to={"https://www.linkedin.com/in/bal%C3%A1zs-gazdag-568a2127b/"} target="_blank">
             <FaLinkedin />
           </Link>
-          <Link to={""}>
+          <Link to={"https://x.com/gazdag99"} target="_blank">
             <FaSquareXTwitter />
           </Link>
         </div>
