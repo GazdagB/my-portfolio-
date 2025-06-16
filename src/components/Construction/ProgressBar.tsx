@@ -4,7 +4,7 @@
 
 const ProgressBar = ({ precent = 0,  }) => {
   return (
-    <div className="w-100">
+    <div className="w-[80%] md:w-100">
       <p className="text-center mb-3">Progress</p>
       <div className="w-full mb-15 h-2 border border-charcoal rounded-full relative">
         <div
