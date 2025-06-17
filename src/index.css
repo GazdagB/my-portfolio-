@@ -2,7 +2,6 @@
 @import url("https://use.typekit.net/gpp1hzc.css");
 @import "tailwindcss";
 
-
 :root{
   padding: 0;
   margin: 0;
@@ -25,17 +24,39 @@ font-style: normal;
 }
 
 @theme {
-  --font-t-sans: var(--font-t-sans;)
-  --font-mono:  var(--font-mono);
-  --font-d-sans: var(--font-sans);
+  /* Fix the syntax error and define proper theme variables */
+  --font-t-sans: var(--font-t-sans);
+  --font-mono: var(--font-mono);
+  --font-d-sans: var(--font-d-sans);
+  
+  /* Colors */
   --color-primary: var(--primary-color);
   --color-secondary: var(--secondary-color);
   --color-secondary-muted: var(--secondary-muted);
   --color-off-white: var(--off-white);
   --color-charcoal: var(--charcoal);
   --color-charcoal-darker: var(--charcoal-darker);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  
+  /* Spacing utilities */
+  --spacing-15: 3.75rem; /* 60px */
+  --spacing-100: 25rem;  /* 400px */
+}
+
+/* Define utility classes that aren't standard in Tailwind */
+.font-t-sans {
+  font-family: var(--font-t-sans);
+}
+
+.text-charcoal {
+  color: var(--charcoal);
+}
+
+.mb-15 {
+  margin-bottom: 3.75rem; /* 60px */
+}
+
+.w-100 {
+  width: 25rem; /* 400px */
 }
 
 .btn-animation{
