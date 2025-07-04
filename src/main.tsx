@@ -9,7 +9,9 @@ createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
      <Navbar/>
-      <App />
+      <div className='ms-[100px]'>
+        <App />
+      </div>
     </BrowserRouter>
   </StrictMode>,
 )
