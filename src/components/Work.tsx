@@ -12,8 +12,8 @@ const Work = () => {
         </div>
 
         <div className="flex justify-center align-center flex-wrap gap-4">
-            <WorkWeb></WorkWeb>
-            <WorkWeb></WorkWeb>
+            <WorkWeb type="design"></WorkWeb>
+            <WorkWeb type="web"></WorkWeb>
             <WorkWeb></WorkWeb>
             <WorkWeb></WorkWeb>
         </div>
